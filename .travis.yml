@@ -43,4 +43,4 @@ after_success:
   - docker tag $REPO:$COMMIT $REPO:$MAIN_TAG
   - docker tag $REPO:$COMMIT-onbuild $REPO:$ONBUILD_TAG
 
-  - docker push $REPO
+  - docker push codyaverett/blog:latest
