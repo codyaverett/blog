@@ -10,11 +10,15 @@ os:
 services:
   - docker
 
+before_script:
+  - npm install -g gatsby@latest
+
 script:
   # Gatsby build
   - npm ci
   # - npm run lint // BUG: Issues with tokens
-  - npm build
+  - gatsby build
+
   # Lint
   - docker run -it --rm -v "$PWD/Dockerfile:/Dockerfile:ro" redcoolbeans/dockerlint
   - docker run -it --rm -v "$PWD/Dockerfile.onbuild:/Dockerfile:ro" redcoolbeans/dockerlint
