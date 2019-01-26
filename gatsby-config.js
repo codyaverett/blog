@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Cody's Gatsby Blog`,
+    author: `Cody Averett`,
+    description: `A starter blog demonstrating what Cody can do with Gatsby.`,
+    siteUrl: `codyaverett.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `code_e_averett`,
     },
   },
   plugins: [
+    { resolve: `gatsby-mdx` },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-46192337-3`,
       },
     },
     `gatsby-plugin-feed`,
