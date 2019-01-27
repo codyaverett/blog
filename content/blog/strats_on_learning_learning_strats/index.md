@@ -1,6 +1,6 @@
 ---
 title: Strats on learning learning strats
-date: '2019-01-26'
+date: '2019-01-27T05:23:25Z'
 ---
 
 Learning is an every day activity. Fact.
