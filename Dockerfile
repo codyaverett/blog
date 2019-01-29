@@ -1,5 +1,6 @@
 FROM alpine:edge
-MAINTAINER José Moreira <josemoreiravarzim@gmail.com>
+LABEL maintainer="Cody Averett"
+LABEL email="codyaverett@gmail.com"
 
 ADD ./nginx-boot.sh /sbin/nginx-boot
 
