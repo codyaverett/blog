@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Cody's Gatsby Blog`,
     author: `Cody Averett`,
-    description: `A starter blog demonstrating what Cody can do with Gatsby.`,
+    description: `A blog by a software engineer who also happens to have the elusive INFP personality type.`,
     siteUrl: `codyaverett.com`,
     social: {
       twitter: `code_e_averett`,
@@ -54,20 +54,23 @@ module.exports = {
         trackingId: `UA-46192337-3`,
       },
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Cody Averett's Blog`,
+        short_name: `Cody Averett`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        background_color: `#383b4f`,
+        theme_color: `#4286f4`,
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: `standalone`,
+        icon: `content/assets/icon.png`, // This path is relative to the root of the site.
+        include_favicon: true, // Include favicon
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
